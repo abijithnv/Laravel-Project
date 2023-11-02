@@ -30,6 +30,15 @@
                         <th>place</th>
                     </div>
                     <div class="col">
+                        <th>College</th>
+                    </div>
+                    <div class="col">
+                        <th>Description</th>
+                    </div>
+                    <div class="col">
+                        <th>Experience</th>
+                    </div>
+                    <div class="col">
                         <th>Remove</th>
                     </div>
                 </div>
@@ -44,6 +53,9 @@
                 <td>{{ $Register->phone }}</td>
                 <td>{{ $Register->email }}</td>
                 <td>{{ $Register->place }}</td>
+                <td>{{ $Register->college }}</td>
+                <td>{{ $Register->description }}</td>
+                <td>{{ $Register->experience }}</td>
                 
                 <td> 
                 <form action="{{ route('delete.register', $Register->id) }}" method="POST">

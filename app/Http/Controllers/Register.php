@@ -17,6 +17,9 @@ class Register extends Controller
         $data->email=$req->email;
         $data->phone=$req->phone;
         $data->place=$req->place;
+        $data->college=$req->college;
+        $data->description=$req->description;
+        $data->experience=$req->experience;
 
         $data->save();
 
