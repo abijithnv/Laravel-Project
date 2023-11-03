@@ -12,6 +12,7 @@
 
 
 <div class="container mt-3">
+    <div><a href="/" class="btn btn-warning">Add user</a></div>
     <h2>List of registered users.</h2>
     <hr>
     <table class="table table-hover">
@@ -62,7 +63,7 @@
                 <form action="{{ route('delete.register', $Register->id) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-warning">DELETE</button></td>
+                        <button type="submit" class="btn btn-warning">DELETE</button><alert</td>
                 </form>
 
             </tr>
