@@ -21,7 +21,7 @@
                 <h2>Sign Up</h2>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" >
                     <p id="nameError" class="error"></p>
                 </div>
 
@@ -47,11 +47,11 @@
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea name="description" id="textarea" cols="50" rows="10"></textarea>
+                    <textarea name="description" id="description" cols="5" rows="3"></textarea>
                     <p id="descriptionError" class="error"></p>
 
                 </div>
-                <div class="form-group">
+                <div class="">
                     <label for="fresher">
                         <input type="radio" id="fresher" name="experience" value="fresher">Fresher
                         <p id="fresherError" class="error"></p>

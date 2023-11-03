@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('',[ Register::class, 'home']);
+Route::get('/',[ Register::class, 'home']);
 
 Route::get('signup',[ Register::class, 'store']);
 

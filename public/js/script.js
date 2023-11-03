@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const phoneInput = document.getElementById('phone');
     const placeInput = document.getElementById('place');
     const collegeInput = document.getElementById('college');
-    const descriptionTextarea = document.getElementById('description');
-    const experienceFresher = document.getElementById('fresher');
-    const experienceExperienced = document.getElementById('experienced');
+    const descriptionInput = document.getElementById('description');
+    // const experienceInput = document.getElementById('experienced');
+    // const experienceExperienced = document.getElementById('fresher');
 
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const placeError = document.getElementById('placeError');
     const collegeError = document.getElementById('collegeError');
     const descriptionError = document.getElementById('descriptionError');
-    const experienceError = document.getElementById('fresherError');
+    // const experienceError = document.getElementById('experiencedError');
 
     form.addEventListener('submit', function (event) {
         let isValid = true;
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         emailError.textContent = '';
         phoneError.textContent = '';
         placeError.textContent = '';
+        collegeError.textContent = '';
         descriptionError.textContent = '';
         experienceError.textContent = '';
 
@@ -56,17 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // College validation (required)
         if (collegeInput.value.trim() === '') {
-            collegeError.textContent = 'College is required';
+            collegeError.textContent = 'College name is required';
             isValid = false;
         }
         // Description validation (required)
-        if (descriptionTextarea.value.trim() === '') {
+        if (descriptionInput.value.trim() === '') {
             descriptionError.textContent = 'Description is required';
             isValid = false;
         }
 
         // Experience radio button validation (at least one selected)
-        if (!experienceFresher.checked && !experienceExperienced.checked) {
+        if (!experienceInput.checked && !experienceExperienced.checked) {
             experienceError.textContent = 'Select your experience';
             isValid = false;
         }

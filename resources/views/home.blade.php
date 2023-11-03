@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
@@ -23,7 +24,7 @@
                     <div class="col">
                         <th>email</th>
                     </div>
-                    <div class="container">
+                    <div class="col">
                         <th>phone</th>
                     </div>
                     <div class="col">
@@ -32,7 +33,7 @@
                     <div class="col">
                         <th>College</th>
                     </div>
-                    <div class="col">
+                    <div class="col" id="col6">
                         <th>Description</th>
                     </div>
                     <div class="col">

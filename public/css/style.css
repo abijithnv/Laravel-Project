@@ -2,23 +2,26 @@ body {
    
     background-color: #e0dddd;
 
-    margin-top: 10px;
+    margin-top: 0px;
     padding: 0;
     display: flex;
     justify-content: center;
     
    
 }
+.signup-container h2 {
+    text-align: left;
+    
+}
 .signup-container {
+    margin-top: 50px;
     background-color: #a19a9a;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 600px;
+    padding: 40px;
+    width: 400px;
 }
-.signup-container h2 {
-    text-align: center;
-}
+
 .signup-form {
     display: flex;
     width: 300px;
@@ -32,9 +35,10 @@ body {
 .form-group textarea
 {
     border-radius: 5px;
+    width: 300px;
 }
 .form-group label {
-    font-weight: bold;
+    font-weight: ;
 }
 .form-group input {
     padding: 8px;
@@ -72,4 +76,9 @@ body {
 
 .signup-button button:hover {
     background-color: #0056b3;
+}
+
+.row col{
+    width:10px;
+
 }
