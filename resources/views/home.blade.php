@@ -44,6 +44,9 @@
                         <th>Experience</th>
                     </div>
                     <div class="col">
+                        <th>Languages</th>
+                    </div>
+                    <div class="col">
                         <th>Edit</th>
                     </div>
                     <div class="col">
@@ -64,6 +67,7 @@
                 <td>{{ $Register->college }}</td>
                 <td>{{ $Register->description }}</td>
                 <td>{{ $Register->experience }}</td>
+                <td>{{ $Register->language }}</td>
 
                 <td><a href="editpage/{{ $Register->id }}/edit" class="btn btn-warning">EDIT</a></td>
                 

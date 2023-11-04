@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const descriptionInput = document.getElementById('description');
     const experienceInput = document.getElementById('experienced');
     const experienceFresher = document.getElementById('fresher');
+    const languageInput =document.getElementById('language')
 
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const placeError = document.getElementById('placeError');
     const collegeError = document.getElementById('collegeError');
     const descriptionError = document.getElementById('descriptionError');
-    
+    const languageError =document.getElementById('language')
     const experienceError = document.getElementById('experiencedError');
 
     form.addEventListener('submit', function (event) {
@@ -29,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         collegeError.textContent = '';
         descriptionError.textContent = '';
         experienceError.textContent = '';
+        languageError.textContent = '';
 
         // Name validation
         if (nameInput.value.trim() === '') {
@@ -64,6 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Description validation (required)
         if (descriptionInput.value.trim() === '') {
             descriptionError.textContent = 'Description is required';
+            isValid = false;
+        }
+
+        if (languageInput.value.trim() === '') {
+            languageError.textContent = 'Language is required';
             isValid = false;
         }
 

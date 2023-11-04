@@ -22,6 +22,7 @@ class Register extends Controller
         $data->college = $req->college;
         $data->description = $req->description;
         $data->experience = $req->experience;
+        $data->language = $req->language;
 
         $data->save();
 

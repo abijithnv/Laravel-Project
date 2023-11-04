@@ -12,16 +12,16 @@
 </head>
 
 <body>
-<ul class="nav">
-  <li class="nav-item ">
-    <a class="nav-link" href="home">Go to Homepage</a>
-  </li>
-</ul> 
+    <ul class="nav">
+        <li class="nav-item ">
+            <a class="nav-link" href="home">Go to Homepage</a>
+        </li>
+    </ul>
 
     @if( $message= Session::get('success'))
-        <div class="alert alert-success alert-block">
-            <strong>{{$message}}</strong>
-        </div>
+    <div class="alert alert-success alert-block">
+        <strong>{{$message}}</strong>
+    </div>
     @endif
     <div class="signup-container">
 
@@ -32,7 +32,7 @@
                 <h2>Sign Up</h2>
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" >
+                    <input type="text" id="name" name="name">
                     <p id="nameError" class="error"></p>
                 </div>
 
@@ -70,11 +70,27 @@
                     <br>
                     <label for="experienced">
                         <input type="radio" id="experienced" name="experience" value="experienced">Experienced
-                      
                         <p id="experiencedError" class="error"></p>
+                    </label>
+                </div>
+                <div class="languages ">
+                    Known languages?
+                    <br>
+                    <label for="malayalam">Malayalam
+                        <input type="checkbox" id="malayalam" name="language" value="malayalam">
+                    </label>&nbsp; Telugu
+                    <label for="telugu">
+                        <input type="checkbox" id="telugu" name="language" value="telugu">
+                    </label>&nbsp;English
+                    <label for="english">
+                        <input type="checkbox" id="english" name="language" value="english">
+                    </label>&nbsp;Hindi
+                    <label for="hindi">
+                        <input type="checkbox" id="Hindi" name="language" value="Hindi">
                     </label>
 
                 </div>
+                <p id="languageError" class="error"></p>
 
         </div>
         <div class="signup-button">

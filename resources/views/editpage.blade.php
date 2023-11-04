@@ -39,7 +39,10 @@
                 <label for="experience">Experience:</label>
                 <input type="text" name="experience" id="experience" value="{{ $Register->experience }}" class="form-control">
             </div>
-
+            <div class="form-group">
+                <label for="language">Languae:</label>
+                <input type="text" name="language" id="language" value="{{ $Register->language }}" class="form-control">
+            </div>
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
     </div>
