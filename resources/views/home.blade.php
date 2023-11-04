@@ -12,13 +12,16 @@
 
 
 <div class="container mt-3">
-    <div><a href="/" class="btn btn-warning">Add user</a></div>
+    <div><a href="/" class=""><h3>Add user</h3></a></div>
     <h2>List of registered users.</h2>
     <hr>
-    <table class="table table-hover">
+    <table class="table table-hover mt-4">
         <thead>
             <tr>
                 <div class="row">
+                <div class="col">
+                        <th>Id</th>
+                    </div>
                     <div class="col">
                         <th>Name</th>
                     </div>
@@ -41,6 +44,9 @@
                         <th>Experience</th>
                     </div>
                     <div class="col">
+                        <th>Edit</th>
+                    </div>
+                    <div class="col">
                         <th>Remove</th>
                     </div>
                 </div>
@@ -50,7 +56,7 @@
         <tbody>
             @foreach($Registers as $Register)
             <tr>
-               
+                <td>{{ $Register->id }}</td>
                 <td>{{ $Register->name }}</td>
                 <td>{{ $Register->phone }}</td>
                 <td>{{ $Register->email }}</td>
@@ -58,6 +64,8 @@
                 <td>{{ $Register->college }}</td>
                 <td>{{ $Register->description }}</td>
                 <td>{{ $Register->experience }}</td>
+
+                <td><a href="editpage/{{ $Register->id }}/edit" class="btn btn-warning">EDIT</a></td>
                 
                 <td> 
                 <form action="{{ route('delete.register', $Register->id) }}" method="POST">
@@ -65,7 +73,7 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-warning">DELETE</button><alert</td>
                 </form>
-
+                
             </tr>
             @endforeach
         </tbody>

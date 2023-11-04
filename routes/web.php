@@ -22,4 +22,11 @@ Route::get('home',[ Register::class, 'homepage']);
 
 Route::post('home',[ Register::class, 'store']);
 
+
+Route::get('editpage/{id}/edit', [Register::class,'edit'])->name('edit.register');
+
+Route::put('update/{id}', [Register::class,'update'])->name('update.register');
+
+
+
 Route::delete('/register/{id}', [Register::class,"delete"])->name('delete.register');

@@ -12,11 +12,22 @@
 </head>
 
 <body>
+<ul class="nav">
+  <li class="nav-item ">
+    <a class="nav-link" href="home">Go to Homepage</a>
+  </li>
+</ul> 
+
+    @if( $message= Session::get('success'))
+        <div class="alert alert-success alert-block">
+            <strong>{{$message}}</strong>
+        </div>
+    @endif
     <div class="signup-container">
 
 
         <div>
-            <form class="signup-form" action="/home" method="post" id="form">
+            <form class="signup-form" action="home" method="post" id="form">
                 @csrf
                 <h2>Sign Up</h2>
                 <div class="form-group">
