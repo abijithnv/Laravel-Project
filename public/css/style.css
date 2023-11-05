@@ -11,12 +11,26 @@ body {
 }
 
 
+.alert {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0; 
+    background-color: #68c44d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center; 
+}
+.nav-link
+{
+    top: 100px;
+}
 .signup-container h2 {
     text-align: left;
-    
 }
+
 .signup-container {
-    margin-top: 50px;
+    margin-top: 90px ;
     background-color: #a19a9a;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -69,7 +83,7 @@ body {
 .signup-button button {
     padding: 10px 20px;
     background-color: #0e6acc;
-    color: #000000;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;

@@ -22,7 +22,9 @@ class Register extends Controller
         $data->college = $req->college;
         $data->description = $req->description;
         $data->experience = $req->experience;
-        $data->language = $req->language;
+        $data->languages = implode(',', (array) $req->languages);
+
+        
 
         $data->save();
 
@@ -58,12 +60,13 @@ class Register extends Controller
         $Register->college = $request->input('college');
         $Register->description = $request->input('description');
         $Register->experience = $request->input('experience');
+        $Register->languages = implode(',', (array) $request->languages);
         
         // Update other user attributes similarly
 
         $Register->save();
 
-        return redirect('home')->with('success', 'Register updated successfully');
+        return redirect('home')->with('success', 'updated successfully');
     }
 
 
@@ -78,7 +81,7 @@ class Register extends Controller
         if ($Register) {
             $Register->delete();
             // Redirect back or to a different page after deletion
-            return redirect('home');
+            return redirect('home')->with('success', 'Deleted Successfully');;
         }
         // Handle the case where the record with the given ID is not found
         return redirect()->back()->with('error', 'Record not found');

@@ -12,8 +12,10 @@
 </head>
 
 <body>
+
     <ul class="nav">
         <li class="nav-item ">
+            <br><br><br>
             <a class="nav-link" href="home">Go to Homepage</a>
         </li>
     </ul>
@@ -73,24 +75,40 @@
                         <p id="experiencedError" class="error"></p>
                     </label>
                 </div>
+                <div class=" ">Known Languages ?<br>
+                                <input type="checkbox" name="languages[]" value="malayalam"> Malayalam 
+                                <input type="checkbox" name="languages[]" value="telugu"> Telugu 
+                                <input type="checkbox" name="languages[]" value="english"> English 
+                                <input type="checkbox" name="languages[]" value="hindi"> Hindi
+                                <input type="checkbox" name="languages[]" value="arabic"> Arabic
+                            </div>
+
+
+
+
+                <!-- 
                 <div class="languages ">
                     Known languages?
                     <br>
                     <label for="malayalam">Malayalam
                         <input type="checkbox" id="malayalam" name="language" value="malayalam">
+                        <p id="languageError" class="language-set"></p>
                     </label>&nbsp; Telugu
                     <label for="telugu">
                         <input type="checkbox" id="telugu" name="language" value="telugu">
+                        <p id="languageError" class="language-set"></p>
                     </label>&nbsp;English
                     <label for="english">
                         <input type="checkbox" id="english" name="language" value="english">
+                        <p id="languageError" class="language-set"></p>
                     </label>&nbsp;Hindi
                     <label for="hindi">
-                        <input type="checkbox" id="Hindi" name="language" value="Hindi">
+                        <input type="checkbox" id="Hindi" name="language" value="hindi">
+                        <p id="languageError" class="language-set"></p>
                     </label>
 
                 </div>
-                <p id="languageError" class="error"></p>
+                 -->
 
         </div>
         <div class="signup-button">
